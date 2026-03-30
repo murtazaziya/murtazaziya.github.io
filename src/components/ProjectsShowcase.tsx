@@ -39,7 +39,7 @@ const projects: Project[] = [
       "https://github.com/murtazaziya/realtime-clickstream-pipeline",
     metrics: [
       { label: "Events Per Second", value: "5/sec" },
-      { label: "Dashboard Pages", value: "8" },
+      { label: "Dashboard Pages", value: "6" },
       { label: "Pipeline Latency", value: "30 sec" },
     ],
   },
