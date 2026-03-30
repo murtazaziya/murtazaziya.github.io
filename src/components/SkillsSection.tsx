@@ -8,59 +8,60 @@ const skillCategories = [
     title: 'Programming & Query Languages',
     icon: Code,
     skills: [
-      { name: 'SQL', level: 95 },
-      { name: 'Python', level: 85 },
-      { name: 'R', level: 70 }
+      { name: 'SQL'},
+      { name: 'Python'},
+      { name: 'R'}
     ],
   },
   {
     title: 'Data Engineering',
     icon: Database,
     skills: [
-      { name: 'Azure Data Factory', level: 90 },
-      { name: 'BigQuery', level: 85 },
-      { name: 'Azure SQL', level: 85 },
-      { name: 'ETL / ELT Pipelines', level: 90 },
-      { name: 'Data Modeling (Fact & Dimension)', level: 85 }
+      { name: 'Azure Data Factory'},
+      { name: 'BigQuery'},
+      { name: 'Azure SQL'},
+      { name: 'ETL / ELT Pipelines'},
+      { name: 'Data Modeling (Fact & Dimension)'},
+      { name: 'dbt (Data Build Tool)'}
     ],
   },
   {
     title: 'Analytics & Business Intelligence',
     icon: BarChart3,
     skills: [
-      { name: 'Power BI', level: 90 },
-      { name: 'Data Visualization', level: 85 },
-      { name: 'Business Analytics', level: 85 },
-      { name: 'Dashboard Development', level: 90 }
+      { name: 'Power BI'},
+      { name: 'Data Visualization'},
+      { name: 'Business Analytics' },
+      { name: 'Dashboard Development'}
     ],
   },
   {
     title: 'Automation & Business Systems',
     icon: Wrench,
     skills: [
-      { name: 'PowerApps', level: 85 },
-      { name: 'Power Automate', level: 85 },
-      { name: 'Workflow Automation', level: 80 },
-      { name: 'Process Optimization', level: 85 }
+      { name: 'PowerApps'},
+      { name: 'Power Automate'},
+      { name: 'Workflow Automation'},
+      { name: 'Process Optimization'}
     ],
   },
   {
     title: 'Data Analysis',
     icon: Brain,
     skills: [
-      { name: 'Pandas', level: 85 },
-      { name: 'Statistical Analysis', level: 80 },
-      { name: 'Exploratory Data Analysis', level: 85 },
-      { name: 'Business Metrics Analysis', level: 85 }
+      { name: 'Pandas'},
+      { name: 'Statistical Analysis'},
+      { name: 'Exploratory Data Analysis'},
+      { name: 'Business Metrics Analysis'}
     ],
   },
   {
     title: 'Tools & Development',
     icon: Globe,
     skills: [
-      { name: 'Git / GitHub', level: 80 },
-      { name: 'Jupyter Notebook', level: 85 },
-      { name: 'VS Code', level: 85 }
+      { name: 'Git / GitHub'},
+      { name: 'Jupyter Notebook'},
+      { name: 'VS Code'}
     ],
   },
 ];
@@ -115,9 +116,7 @@ export function SkillsSection() {
                       >
                         <div className="flex items-center justify-between mb-2">
                           <span className="text-sm">{skill.name}</span>
-                          <span className="text-sm text-muted-foreground">{skill.level}%</span>
                         </div>
-                        <Progress value={skill.level} className="h-2" />
                       </motion.div>
                     ))}
                   </div>

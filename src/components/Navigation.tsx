@@ -57,7 +57,7 @@ export function Navigation({ activeSection }: NavigationProps) {
               onClick={() => scrollToSection('home')}
               className="text-xl font-semibold tracking-tight hover:opacity-80 transition-opacity"
             >
-              Murtaza Ziya
+              MZ
             </button>
 
             {/* Desktop Navigation */}

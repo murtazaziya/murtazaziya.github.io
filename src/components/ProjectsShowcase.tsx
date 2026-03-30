@@ -26,19 +26,21 @@ export interface Project {
 const projects: Project[] = [
   {
     id: "1",
-    title: "Enterprise Analytics Platform",
+    title: "Real-Time Clickstream Analytics Pipeline",
     description:
-      "Analytics platform supporting 100K+ users with scalable warehouse models and Power BI reporting.",
+      "Production-grade real-time streaming pipeline processing website clickstream events end-to-end on Azure.",
     longDescription:
-      "Built analytics solutions for a large enterprise learning platform used by more than 100,000 users. Redesigned BigQuery warehouse models including fact and dimension tables to improve query performance and data accuracy. Developed over 20 Power BI dashboards used by clients to track engagement, platform usage, and performance metrics. Implemented optimized data models reducing query time by 30% and improving reporting accuracy by 40%.",
-    category: "analytics",
-    tags: ["BigQuery", "SQL", "Power BI", "Data Modeling", "Analytics Engineering"],
+      "Built a complete real-time data engineering pipeline on Azure that simulates, ingests, processes, transforms, and visualizes millions of website clickstream events. Implemented a FastAPI producer streaming 5 events/second continuously to Azure Event Hubs using the Kafka protocol. Built Spark Structured Streaming jobs on Azure Databricks with a dual sink architecture — writing raw Parquet files to ADLS Gen2 and aggregated metrics to Azure PostgreSQL using idempotent upserts. Modeled a dbt staging and marts transformation layer following Medallion Architecture. Delivered an 8-page Power BI dashboard with 40+ visuals covering traffic, conversions, geography, device performance, and product analytics. Provisioned all Azure infrastructure end-to-end using Terraform.",
+    category: "engineering",
+    tags: ["Apache Kafka", "Apache Spark", "Azure Databricks", "Azure Event Hubs", "ADLS Gen2", "PostgreSQL", "dbt", "Power BI", "FastAPI", "Terraform", "Python"],
     image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?q=80&w=1200&auto=format&fit=crop",
+    githubUrl:
+      "https://github.com/murtazaziya/realtime-clickstream-pipeline",
     metrics: [
-      { label: "Platform Users", value: "100K+" },
-      { label: "Dashboards Built", value: "20+" },
-      { label: "Query Performance", value: "+30%" },
+      { label: "Events Per Second", value: "5/sec" },
+      { label: "Dashboard Pages", value: "8" },
+      { label: "Pipeline Latency", value: "30 sec" },
     ],
   },
 
@@ -64,6 +66,24 @@ const projects: Project[] = [
 
   {
     id: "3",
+    title: "Enterprise Analytics Platform",
+    description:
+      "Analytics platform supporting 100K+ users with scalable warehouse models and Power BI reporting.",
+    longDescription:
+      "Built analytics solutions for a large enterprise learning platform used by more than 100,000 users. Redesigned BigQuery warehouse models including fact and dimension tables to improve query performance and data accuracy. Developed over 20 Power BI dashboards used by clients to track engagement, platform usage, and performance metrics. Implemented optimized data models reducing query time by 30% and improving reporting accuracy by 40%.",
+    category: "analytics",
+    tags: ["BigQuery", "SQL", "Power BI", "Data Modeling", "Analytics Engineering"],
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    metrics: [
+      { label: "Platform Users", value: "100K+" },
+      { label: "Dashboards Built", value: "20+" },
+      { label: "Query Performance", value: "+30%" },
+    ],
+  },
+
+  {
+    id: "4",
     title: "Automated Business Workflow System",
     description:
       "Automation system reducing internal approval processes from 5 days to 1 day.",
@@ -76,23 +96,6 @@ const projects: Project[] = [
     metrics: [
       { label: "Approval Time", value: "5d → 1d" },
       { label: "Automation", value: "70% faster" },
-    ],
-  },
-
-  {
-    id: "4",
-    title: "Retail Analytics Case Study",
-    description:
-      "Retail transaction analysis identifying benchmark stores and measuring trial performance.",
-    longDescription:
-      "Analyzed retail transaction datasets as part of the Quantium Data Analytics simulation. Identified benchmark stores for testing layout changes and conducted uplift analysis to measure the performance impact of store trials. Delivered analytical reports highlighting customer purchasing patterns and providing data-driven recommendations.",
-    category: "analytics",
-    tags: ["Python", "Data Analysis", "Retail Analytics", "Statistical Analysis"],
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
-    metrics: [
-      { label: "Dataset", value: "Retail Transactions" },
-      { label: "Analysis", value: "Customer Behavior" },
     ],
   },
 ];
