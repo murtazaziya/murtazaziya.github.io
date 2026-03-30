@@ -58,11 +58,10 @@ export function HeroSection() {
               <ArrowDown className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform" />
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <a href="mailto:ziya.murtaza141@gmail.com">
-                <Mail className="mr-2 h-4 w-4" />
-                Get In Touch
-              </a>
-            </Button>
+                  <a href="/mziya_de_resume.pdf" target="_blank" rel="noopener noreferrer">
+                    Resume
+                  </a>
+                </Button>
           </div>
 
           <div className="flex items-center justify-center gap-4">

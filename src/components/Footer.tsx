@@ -47,6 +47,11 @@ export function Footer() {
                   Contact
                 </a>
               </li>
+              <li>
+                <a href="/mziya_de_resume.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                  Resume
+                </a>
+              </li>
             </ul>
           </div>
 
